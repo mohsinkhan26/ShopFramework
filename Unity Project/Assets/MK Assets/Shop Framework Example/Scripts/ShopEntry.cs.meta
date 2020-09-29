@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: dbe64ee456b4c49539ebf7b5e8449bdd
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - shopData: {fileID: 11400000, guid: 766220151d7074d138b93f8f201b64bc, type: 2}
+  - shopDesign: {fileID: 11400000, guid: 8bb77871f9fd24486878f5c2db9edd5e, type: 2}
+  - itemName: {instanceID: 0}
+  - backgroundImage: {instanceID: 0}
+  - itemImage: {instanceID: 0}
+  - shopDesign: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
