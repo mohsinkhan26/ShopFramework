@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e263e8936f9104ea491993dd4f2da195, type: 3}
+  m_Name: Shop Data
+  m_EditorClassIdentifier: 
+  folderReference:
+    GUID: b4bc457c96f0643a8bc028c40870b104
+  jsonText: "{\n  \"ShopItems\": [\n    {\n      \"ItemID\": 1,\n      \"ItemType\":
+    \"Consumable\",\n      \"ItemName\": \"Glittering Gem\",\n      \"Quantity\":
+    1,\n      \"Consume\": \"Gem\",\n      \"Price\": 10,\n      \"SmallImage\":
+    \"shopping bag 01.png\",\n      \"BigImage\": \"shopping bag 01.png\",\n     
+    \"Description\": \"Only one gem\"\n    },\n    {\n      \"ItemID\": 2,\n     
+    \"ItemType\": \"Consumable\",\n      \"ItemName\": \"Expensive Coin\",\n     
+    \"Quantity\": 1,\n      \"Consume\": \"Coin\",\n      \"Price\": 20,\n      \"SmallImage\":
+    \"shopping bag 02.png\",\n      \"BigImage\": \"shopping bag 02.png\",\n     
+    \"Description\": \"Only one coin\"\n    },\n    {\n      \"ItemID\": 3,\n     
+    \"ItemType\": \"Consumable\",\n      \"ItemName\": \"Exclusive Ticket\",\n     
+    \"Quantity\": 1,\n      \"Consume\": \"Ticket\",\n      \"Price\": 30,\n     
+    \"SmallImage\": \"shopping bag 03.png\",\n      \"BigImage\": \"shopping bag
+    03.png\",\n      \"Description\": \"Only one ticket\"\n    },\n    {\n      \"ItemID\":
+    4,\n      \"ItemType\": \"Consumable\",\n      \"ItemName\": \"Pack of VIP\",\n     
+    \"Quantity\": 1,\n      \"Consume\": \"Gem\",\n      \"Price\": 40,\n      \"SmallImage\":
+    \"shopping bag 04.png\",\n      \"BigImage\": \"shopping bag 04.png\",\n     
+    \"Description\": \"Pack for VIPs\",\n      \"Bundle\": [\n        {\n         
+    \"BundleID\": 1,\n          \"Item1\": \"Coin\",\n          \"Item2\": \"Gem\",\n         
+    \"Item3\": \"Ticket\"\n        }\n      ]\n    }\n  ]\n}"
+  shopDetails:
+  - itemID: 0
+    itemType: 0
+    itemName: 
+    itemQuantity: 0
+    consumeType: 0
+    itemPrice: 132.6
+    smallSprite: {fileID: 0}
+    bigSprite: {fileID: 0}
+    itemDescription: 
+    bundle: 000000000000000000000000
+  - itemID: 1
+    itemType: 0
+    itemName: 
+    itemQuantity: 0
+    consumeType: 0
+    itemPrice: 132.6
+    smallSprite: {fileID: 0}
+    bigSprite: {fileID: 0}
+    itemDescription: 
+    bundle: 

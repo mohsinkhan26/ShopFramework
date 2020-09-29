@@ -1,0 +1,56 @@
+{
+  "ShopItems": [
+    {
+      "ItemID": 1,
+      "ItemType": "Consumable",
+      "ItemName": "Glittering Gem",
+      "Quantity": 1,
+      "Consume": "Gem",
+      "Price": 10,
+      "SmallImage": "shopping bag 01.png",
+      "BigImage": "shopping bag 01.png",
+      "Description": "Only one gem"
+    },
+    {
+      "ItemID": 2,
+      "ItemType": "Consumable",
+      "ItemName": "Expensive Coin",
+      "Quantity": 1,
+      "Consume": "Coin",
+      "Price": 20,
+      "SmallImage": "shopping bag 02.png",
+      "BigImage": "shopping bag 02.png",
+      "Description": "Only one coin"
+    },
+    {
+      "ItemID": 3,
+      "ItemType": "Consumable",
+      "ItemName": "Exclusive Ticket",
+      "Quantity": 1,
+      "Consume": "Ticket",
+      "Price": 30,
+      "SmallImage": "shopping bag 03.png",
+      "BigImage": "shopping bag 03.png",
+      "Description": "Only one ticket"
+    },
+    {
+      "ItemID": 4,
+      "ItemType": "Consumable",
+      "ItemName": "Pack of VIP",
+      "Quantity": 1,
+      "Consume": "Gem",
+      "Price": 40,
+      "SmallImage": "shopping bag 04.png",
+      "BigImage": "shopping bag 04.png",
+      "Description": "Pack for VIPs",
+      "Bundle": [
+        {
+          "BundleID": 1,
+          "Item1": "Coin",
+          "Item2": "Gem",
+          "Item3": "Ticket"
+        }
+      ]
+    }
+  ]
+}
