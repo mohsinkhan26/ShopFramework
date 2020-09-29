@@ -8,9 +8,9 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEngine;
 using MK.Common;
 using MK.Common.Utilities;
-using UnityEngine;
 
 namespace MK.ShopFramework.Data
 {
@@ -25,6 +25,8 @@ namespace MK.ShopFramework.Data
         string jsonText;
 
         [SerializeField] List<ShopDetail> shopDetails;
+        public List<ShopDetail> AllShopProducts { get { return shopDetails; } }
+        public int TotalShopProducts { get { return shopDetails.Count; } }
 
         #region Getters // for developers
 

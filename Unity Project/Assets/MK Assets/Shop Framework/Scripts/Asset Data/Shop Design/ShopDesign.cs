@@ -5,11 +5,11 @@
  * BitBucket : https://bitbucket.org/mohsinkhan26/ 
 */
 
-using UnityEditor.Presets;
 using UnityEngine;
+using UnityEditor.Presets;
 
 namespace MK.ShopFramework.Data
-{
+{ // NOTE: presets can't be set in runtime, so choose the design and set it manually
     [CreateAssetMenu(fileName = "Shop Design", menuName = "Data/Shop Design", order = 1)]
     public sealed class ShopDesign : ScriptableObject
     {
