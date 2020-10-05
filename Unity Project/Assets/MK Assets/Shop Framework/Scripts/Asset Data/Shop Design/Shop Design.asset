@@ -12,27 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66705b6dfcafd48da8bffd6a48a63321, type: 3}
   m_Name: Shop Design
   m_EditorClassIdentifier: 
-  productText:
-    m_Filter: 
-    m_Preset: {fileID: 2655988077585873504, guid: cd9f1d6dc219b4ff485a52873249171d, type: 2}
-    m_Disabled: 0
-  productBackgroundImage:
-    m_Filter: 
-    m_Preset: {fileID: 2655988077585873504, guid: eccab9d8d3a744b83bd5041687702ba2, type: 2}
-    m_Disabled: 0
-  productImage:
-    m_Filter: 
-    m_Preset: {fileID: 2655988077585873504, guid: 859afb784a4e346259bd467f80c86b65, type: 2}
-    m_Disabled: 0
-  bundleText:
-    m_Filter: 
-    m_Preset: {fileID: 2655988077585873504, guid: ea48f411286194f8ab1db91ed23ee98f, type: 2}
-    m_Disabled: 0
-  bundleBackgroundImage:
-    m_Filter: 
-    m_Preset: {fileID: 2655988077585873504, guid: 059e859074e2648ae9bf7720f4a9afa9, type: 2}
-    m_Disabled: 0
-  bundleImage:
-    m_Filter: 
-    m_Preset: {fileID: 2655988077585873504, guid: 811ba84a26bd446528bb3086a9f793a1, type: 2}
-    m_Disabled: 0
+  presetFolderReference:
+    GUID: a1f5a79d0aeb64affb457b75897aa804
+  productTextPreset: {fileID: 2655988077585873504, guid: cd9f1d6dc219b4ff485a52873249171d, type: 2}
+  productBackgroundImagePreset: {fileID: 2655988077585873504, guid: eccab9d8d3a744b83bd5041687702ba2, type: 2}
+  productImagePreset: {fileID: 2655988077585873504, guid: 859afb784a4e346259bd467f80c86b65, type: 2}
+  bundleTextPreset: {fileID: 2655988077585873504, guid: ea48f411286194f8ab1db91ed23ee98f, type: 2}
+  bundleBackgroundImagePreset: {fileID: 2655988077585873504, guid: 059e859074e2648ae9bf7720f4a9afa9, type: 2}
+  bundleImagePreset: {fileID: 2655988077585873504, guid: 811ba84a26bd446528bb3086a9f793a1, type: 2}
