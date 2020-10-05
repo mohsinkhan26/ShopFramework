@@ -30,9 +30,9 @@ MonoBehaviour:
     4,\n      \"ItemType\": \"Consumable\",\n      \"ItemName\": \"Pack of VIP\",\n     
     \"Quantity\": 1,\n      \"Consume\": \"Gem\",\n      \"Price\": 40,\n      \"SmallImage\":
     \"shopping bag 04.png\",\n      \"BigImage\": \"shopping bag 04.png\",\n     
-    \"Description\": \"Pack for VIPs\",\n      \"Bundle\": [\n        {\n         
-    \"BundleID\": 1,\n          \"Item1\": \"Coin\",\n          \"Item2\": \"Gem\",\n         
-    \"Item3\": \"Ticket\"\n        }\n      ]\n    }\n  ]\n}"
+    \"Description\": \"Pack for VIPs\",\n      \"Bundle\": {\n        \"Item1\":
+    \"Coin\",\n        \"Item2\": \"Gem\",\n        \"Item3\": \"Ticket\"\n     
+    }\n    }\n  ]\n}"
   shopDetails:
   - itemID: 0
     itemType: 0

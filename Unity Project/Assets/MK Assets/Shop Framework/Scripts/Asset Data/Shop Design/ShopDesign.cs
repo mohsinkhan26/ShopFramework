@@ -7,19 +7,25 @@
 
 using UnityEngine;
 using UnityEditor.Presets;
+using MK.Common.Utilities;
 
 namespace MK.ShopFramework.Data
 { // NOTE: presets can't be set in runtime, so choose the design and set it manually
     [CreateAssetMenu(fileName = "Shop Design", menuName = "Data/Shop Design", order = 1)]
     public sealed class ShopDesign : ScriptableObject
     {
-        [Header("Product")] [SerializeField] DefaultPreset productText;
-        [SerializeField] DefaultPreset productBackgroundImage;
-        [SerializeField] DefaultPreset productImage;
+        [SerializeField] FolderReference presetFolderReference;
+        public string PresetFolderReference { get { return presetFolderReference.Path; } }
 
-        [Header("Bundle")] [SerializeField] DefaultPreset bundleText;
-        [SerializeField] DefaultPreset bundleBackgroundImage;
-        [SerializeField] DefaultPreset bundleImage;
+        [Header("Product")]
+        [SerializeField] Preset productTextPreset;
+        [SerializeField] Preset productBackgroundImagePreset;
+        [SerializeField] Preset productImagePreset;
+
+        [Header("Bundle")]
+        [SerializeField] Preset bundleTextPreset;
+        [SerializeField] Preset bundleBackgroundImagePreset;
+        [SerializeField] Preset bundleImagePreset;
 
         #region Getters // for artists
 
@@ -28,9 +34,9 @@ namespace MK.ShopFramework.Data
         /// </summary>
         /// <param name="isBundle"></param>
         /// <returns></returns>
-        public DefaultPreset GetTextPreset(bool isBundle)
+        public Preset GetTextPreset(bool isBundle)
         {
-            return isBundle ? bundleText : productText;
+            return isBundle ? bundleTextPreset : productTextPreset;
         }
 
         /// <summary>
@@ -38,9 +44,9 @@ namespace MK.ShopFramework.Data
         /// </summary>
         /// <param name="isBundle"></param>
         /// <returns></returns>
-        public DefaultPreset GetBackgroundImagePreset(bool isBundle)
+        public Preset GetBackgroundImagePreset(bool isBundle)
         {
-            return isBundle ? bundleImage : productImage;
+            return isBundle ? bundleImagePreset : productImagePreset;
         }
 
         /// <summary>
@@ -48,9 +54,9 @@ namespace MK.ShopFramework.Data
         /// </summary>
         /// <param name="isBundle"></param>
         /// <returns></returns>
-        public DefaultPreset GetImagePreset(bool isBundle)
+        public Preset GetImagePreset(bool isBundle)
         {
-            return isBundle ? bundleBackgroundImage : productBackgroundImage;
+            return isBundle ? bundleBackgroundImagePreset : productBackgroundImagePreset;
         }
 
         #endregion Getters // for artists
