@@ -34,23 +34,43 @@ MonoBehaviour:
     \"Coin\",\n        \"Item2\": \"Gem\",\n        \"Item3\": \"Ticket\"\n     
     }\n    }\n  ]\n}"
   shopDetails:
-  - itemID: 0
-    itemType: 0
-    itemName: 
-    itemQuantity: 0
-    consumeType: 0
-    itemPrice: 132.6
-    smallSprite: {fileID: 0}
-    bigSprite: {fileID: 0}
-    itemDescription: 
-    bundle: 000000000000000000000000
   - itemID: 1
     itemType: 0
-    itemName: 
-    itemQuantity: 0
-    consumeType: 0
-    itemPrice: 132.6
-    smallSprite: {fileID: 0}
-    bigSprite: {fileID: 0}
-    itemDescription: 
+    itemName: Glittering Gem
+    itemQuantity: 1
+    consumeType: 1
+    itemPrice: 10
+    smallSprite: {fileID: 21300000, guid: f96ffd95154b642bcabe093e4e6d5136, type: 3}
+    bigSprite: {fileID: 21300000, guid: f96ffd95154b642bcabe093e4e6d5136, type: 3}
+    itemDescription: Only one gem
     bundle: 
+  - itemID: 2
+    itemType: 0
+    itemName: Expensive Coin
+    itemQuantity: 1
+    consumeType: 0
+    itemPrice: 20
+    smallSprite: {fileID: 21300000, guid: 2ec0d83a254e7498ba93f762268ec8f3, type: 3}
+    bigSprite: {fileID: 21300000, guid: 2ec0d83a254e7498ba93f762268ec8f3, type: 3}
+    itemDescription: Only one coin
+    bundle: 
+  - itemID: 3
+    itemType: 0
+    itemName: Exclusive Ticket
+    itemQuantity: 1
+    consumeType: 2
+    itemPrice: 30
+    smallSprite: {fileID: 21300000, guid: 37cddc371db7d4717843450c2864ad7a, type: 3}
+    bigSprite: {fileID: 21300000, guid: 37cddc371db7d4717843450c2864ad7a, type: 3}
+    itemDescription: Only one ticket
+    bundle: 
+  - itemID: 4
+    itemType: 0
+    itemName: Pack of VIP
+    itemQuantity: 1
+    consumeType: 1
+    itemPrice: 40
+    smallSprite: {fileID: 21300000, guid: c10bb51955489469da19ff21d85f19bd, type: 3}
+    bigSprite: {fileID: 21300000, guid: c10bb51955489469da19ff21d85f19bd, type: 3}
+    itemDescription: Pack for VIPs
+    bundle: 000000000100000002000000

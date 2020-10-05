@@ -9,6 +9,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
+using Newtonsoft.Json;
 using MK.Common;
 using MK.Common.Utilities;
 
@@ -110,15 +114,36 @@ namespace MK.ShopFramework.Data
         [ContextMenu("Load Data File As Text")]
         void LoadDataFileAsText()
         {
+            TextAsset textAsset = AssetDatabase.LoadAssetAtPath<TextAsset>(folderReference.Path + "/Data.txt");
+            if (!string.IsNullOrEmpty(textAsset.text))
+                jsonText = textAsset.text;
             this.Log("LoadDataFileAsText-Folder-Path: " + folderReference.Path
-                + "   GUID: " + folderReference.GUID);
+                + "\nGUID: " + folderReference.GUID + "\nText: " + textAsset.text);
         }
 
         [ContextMenu("Load Data in List")]
         void LoadDataInList()
         {
             this.Log("LoadDataInList-Path: " + folderReference.Path
-                + "   GUID: " + folderReference.GUID);
+                + "\nGUID: " + folderReference.GUID);
+            Dictionary<string, List<ShopModel>> jsonData = JsonConvert.DeserializeObject<Dictionary<string, List<ShopModel>>>(jsonText);
+            if (jsonData.ContainsKey("ShopItems"))
+            {
+                List<ShopModel> shopModels = new List<ShopModel>();
+                shopModels = jsonData["ShopItems"];
+                if (shopDetails == null)
+                    shopDetails = new List<ShopDetail>();
+                else shopDetails.Clear();
+
+                for (int i = 0; i < shopModels.Count; ++i)
+                {
+                    shopDetails.Add(new ShopDetail(shopModels[i].ItemID, (ItemType)Enum.Parse(typeof(ItemType), shopModels[i].ItemType, true),
+                        shopModels[i].ItemName, shopModels[i].Quantity, (ConsumeType)Enum.Parse(typeof(ConsumeType), shopModels[i].Consume, true),
+                        shopModels[i].Price, AssetDatabase.LoadAssetAtPath<Sprite>(folderReference.Path + "/" + shopModels[i].SmallImage),
+                        AssetDatabase.LoadAssetAtPath<Sprite>(folderReference.Path + "/" + shopModels[i].BigImage), shopModels[i].Description,
+                        shopModels[i].Bundle));
+                }
+            }
         }
 
         [ContextMenu("Load Data From File and in List")]
@@ -127,7 +152,7 @@ namespace MK.ShopFramework.Data
             LoadDataFileAsText();
             LoadDataInList();
             this.Log("LoadDataFromFileAndInList-Path: " + folderReference.Path
-                + "   GUID: " + folderReference.GUID);
+                + "\nGUID: " + folderReference.GUID);
         }
 
         [ContextMenu("Sort Data")]

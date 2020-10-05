@@ -43,14 +43,11 @@
       "SmallImage": "shopping bag 04.png",
       "BigImage": "shopping bag 04.png",
       "Description": "Pack for VIPs",
-      "Bundle": [
-        {
-          "BundleID": 1,
-          "Item1": "Coin",
-          "Item2": "Gem",
-          "Item3": "Ticket"
-        }
-      ]
+      "Bundle": {
+        "Item1": "Coin",
+        "Item2": "Gem",
+        "Item3": "Ticket"
+      }
     }
   ]
 }

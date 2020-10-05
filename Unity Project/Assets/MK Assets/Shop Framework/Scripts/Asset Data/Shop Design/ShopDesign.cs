@@ -15,7 +15,7 @@ namespace MK.ShopFramework.Data
     public sealed class ShopDesign : ScriptableObject
     {
         [SerializeField] FolderReference presetFolderReference;
-        public string PresetFolderReference { get { return presetFolderReference.Path; } }
+        public string PresetFolderPath { get { return presetFolderReference.Path; } }
 
         [Header("Product")]
         [SerializeField] Preset productTextPreset;

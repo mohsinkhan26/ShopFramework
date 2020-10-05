@@ -177,7 +177,8 @@ namespace MK.ShopFramework.Data
         /// <param name="list"></param>
         private bool OnCanRemoveCallback(ReorderableList list)
         {
-            return list.count > 1;
+            //return list.count > 1;
+            return true;
         }
 
         #endregion Reorderable list
